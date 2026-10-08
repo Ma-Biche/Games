@@ -43,8 +43,16 @@ function sortGames(list, sortBy) {
 }
 
 function createCard(game) {
-  const card = document.createElement("article");
+  const card = document.createElement(game.url ? "a" : "article");
   card.className = "card";
+  if (game.url) {
+    card.href = game.url;
+    card.classList.add("card-link");
+    const badge = document.createElement("span");
+    badge.className = "play-badge";
+    badge.textContent = "▶ Play";
+    card.appendChild(badge);
+  }
 
   const img = document.createElement("img");
   img.src = game.image;

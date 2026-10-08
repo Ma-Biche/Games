@@ -8,5 +8,6 @@ const games = [
   { title: "Hollow Knight", genre: "Platformer", platform: "PC", rating: 9.0, image: "images/hollow-knight.jpg" },
   { title: "Civilization VI", genre: "Strategy", platform: "PC", rating: 8.6, image: "images/civilization-6.jpg" },
   { title: "Forza Horizon 5", genre: "Racing", platform: "Xbox", rating: 9.0, image: "images/forza-horizon-5.jpg" },
-  { title: "Zelda: Breath of the Wild", genre: "Adventure", platform: "Switch", rating: 9.7, image: "images/zelda-botw.jpg" }
+  { title: "Zelda: Breath of the Wild", genre: "Adventure", platform: "Switch", rating: 9.7, image: "images/zelda-botw.jpg" },
+  { title: "Forest Friends", genre: "Casual", platform: "Web", rating: 8.5, image: "games/forest-friends/cover.svg", url: "games/forest-friends/index.html" }
 ];
