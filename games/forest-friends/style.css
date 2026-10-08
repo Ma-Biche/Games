@@ -109,8 +109,9 @@ html, body {
   height: 56px;
   border: 0;
   background: url(../../assets/Vector/round_brown.svg) center/100% 100%;
-  color: #fff1d2;
+  color: #6d4b27;
   font-size: 20px;
+  font-weight: 700;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
