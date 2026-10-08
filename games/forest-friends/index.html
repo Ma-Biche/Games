@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Forest Friends</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Placeholder: replaced by the real game page. -->
-  <p>Forest Friends</p>
+  <canvas id="game"></canvas>
+  <div id="stars-layer"></div>
+  <div id="hud" class="panel">
+    <h1>Forest Friends</h1>
+    <p class="status"><img id="status-icon" src="../../assets/Vector/round_grey.svg" alt=""><span id="status">Loading…</span></p>
+    <a class="back" href="../../index.html">← Games</a>
+  </div>
+  <ol id="scoreboard" class="panel"></ol>
+  <div id="pad">
+    <button data-dir="up" aria-label="Up">▲</button>
+    <button data-dir="left" aria-label="Left">◀</button>
+    <button data-dir="down" aria-label="Down">▼</button>
+    <button data-dir="right" aria-label="Right">▶</button>
+  </div>
+  <div id="loading">
+    <div class="banner">Loading…</div>
+    <p id="load-error"></p>
+  </div>
+  <script src="wasm_exec.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
